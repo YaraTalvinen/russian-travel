@@ -1,8 +1,24 @@
 .header__langs {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin: 0;
-  padding: 46px 0 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 46px 0 0;
 }
 
+@media screen and (max-width: 1023px) {
+    .header__langs {
+        margin: 0 0 6px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__langs {
+        margin: 0 0 8px;
+    }
+}
+
+
+/*Заметила, что после того, как убрала высоту элемента, языки пошли в пляс на разрешениях 320px и 768px,
+пришлось приструнить их отступами, чтоб вели себя прилично*/

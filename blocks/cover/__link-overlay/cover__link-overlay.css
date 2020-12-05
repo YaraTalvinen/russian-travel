@@ -1,0 +1,42 @@
+.cover__link-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1184px;
+  min-height: 740px;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(rgba(42, 44, 47.1, 0.3), rgba(42, 44, 47.1, 0.3)), url(../../../images/__доБайкала.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover__link-overlay:hover {
+  background-image: linear-gradient(rgba(42, 44, 47.1, 0.8), rgba(42, 44, 47.1, 0.8)), url(../../../images/__доБайкала.jpg);
+  cursor: pointer;
+  transition: .4s ease-in-out; /*хоть убейте- не пойму, почему оно не работает*/
+}
+
+/*Вообще мысль залить градиентом пришла при перелистывании записей теории и воспоминаний о слоях в Фотошопе, не самая лучшая,
+но оно хоть как-то работает, в отличие от всех остальных вариантов*/
+
+@media screen and (max-width: 1024px) {
+  .cover__link-overlay {
+    min-height: 620px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__link-overlay {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover__link-overlay {
+    min-height: 200px;
+  }
+}

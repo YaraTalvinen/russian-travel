@@ -1,0 +1,8 @@
+.header__langs {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 46px 0 0;
+}
+

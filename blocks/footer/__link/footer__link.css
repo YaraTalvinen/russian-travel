@@ -12,7 +12,7 @@
 
 .footer__link:hover {
     transition: .4s;
-    opacity: .7;
+    opacity: .8;
 }
 
 @media screen and (max-width: 767px) {

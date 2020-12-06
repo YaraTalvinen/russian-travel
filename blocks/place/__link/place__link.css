@@ -2,6 +2,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 1.22;
+    align-self: end;
     text-decoration-line: underline;
     color: #fff;
     cursor: pointer;
@@ -11,5 +12,5 @@
 
 .place__link:hover {
     transition: .4s;
-    opacity: .6;
+    opacity: .8;
 }

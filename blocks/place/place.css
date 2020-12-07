@@ -1,13 +1,13 @@
 .place {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(460px 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
     gap: 48px 40px;
     margin: 0 0 80px;
 }
 
 @media screen and (max-width: 1279px) {
     .place {
-        grid-template-columns: repeat(auto-fit, minmax(440px 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
         gap: 48px 32px;
         margin: 0 0 84px;
     }
@@ -15,8 +15,10 @@
 
 @media screen and (max-width: 1023px) {
     .place {
-        grid-template-columns: repeat(auto-fit, minmax(340px 1fr));
-        gap: 48px 28px;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 48px 22px;
+        /*не знаю, в чем проблема еще, но текст в Байкале встает, как на макете, только если уменьшить значение gap с 28px до 22px)
+        Что, где и как еще задавать и выравнивать, ума не приложу*/
         margin: 0 0 72px;
     }
 }
